@@ -6,7 +6,7 @@ While still enjoying the occasional lurk on 4chan, over the years I've found tha
 
 Many of the boards now appear as though stuck in a loop, frozen in time; Echoing the same toxicity without adding any value. 
 
-So I wrote a script that'll expunge the boards of posts matching the **words** array in the script. a User Script has been attached for those who wish to use TamperMonkey, GreaseMonkey, or other derivatives. 
+So I wrote a script that'll expunge the boards of posts containing words matching the **words** array in the script. A User Script has been attached for those who wish to use TamperMonkey, GreaseMonkey, or other derivatives. 
 
 ## Installation
 
