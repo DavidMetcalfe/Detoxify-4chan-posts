@@ -5,13 +5,21 @@ containing words matching the below words array.
 David Metcalfe, April 7 2017
 */
 
-var posts = document.getElementsByClassName("postMessage");
 var words = ['cuck', 'autis', 'nig', 'rape', 'gay'];
+
+// every 200 milliseconds, re-run to remove any new matching comments.
+setInterval(function() {
+var posts = document.getElementsByClassName("postMessage");
 
 var regFind = function(string, arr) {
     for (var i = 0; i < arr.length; i++) {
         var re = new RegExp(arr[i], "gi");
-        return re.test(string);
+        if (re.test(string)) {
+            return true;
+        }
+        else {
+            continue;
+        }
     }
 };
 
@@ -28,3 +36,4 @@ for (var i = 0; i < posts.length; i++)
         posts[i].parentNode.parentNode.remove();
     }
 }
+}, 200);
